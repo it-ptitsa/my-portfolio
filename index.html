@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Моя Визитка</title>
+</head>
+<body>
+    <header>
+        <div class="topBox">
+            <h1>Привет, ты попал на мою визитку</h1>
+            <img class="myPhoto" src="images/photo_2025-07-01%2017.11.28.jpeg" alt="Моя фотография">
+        </div>
+
+        <nav class="navigationBox">
+            <ul class="navList">
+                <li><a class="listItem" href="#about">О себе</a></li>
+                <li><a class="listItem" href="#hobbies">Хобби</a></li>
+                <li><a class="listItem" href="#skills">Навыки</a></li>
+                <li><a class="listItem" href="#achievements">Достижения</a></li>
+                <li><a class="listItem" href="#contacts">Контакты</a></li>
+                <li><a class="listItem" href="#photo">Фото</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainBox">
+        <section id="about">
+            <h2>О себе</h2>
+            <p>Я начинающий фронтенд-разработчик, изучаю HTML, CSS и активно осваиваю React. Этот сайт я сделала как часть своей практики - чтобы прокачивать навыки вёрстки, дизайна и веб-разработки в целом.<br>
+                Мне нравится создавать понятные, удобные и красивые интерфейсы. В коде я ценю чистоту, структуру и желание разобраться, как всё работает "под капотом". Постепенно учусь не только писать код, но и думать как инженер - принимать технические решения, понимать архитектуру и делать продукт лучше.
+                <br>Этот путь только начинается, и я получаю настоящее удовольствие от процесса. Буду рада обратной связи и новым знакомствам!</p>
+        </section>
+
+        <section class="interests">
+            <h2 id="hobbies">Мои хобби</h2>
+            <p>В свободное время я:</p>
+            <ul>
+                <li>Катаюсь на скейте</li>
+                <li>Читаю книги</li>
+                <li>Рисую картины по номерам</li>
+                <li>Играю в игры</li>
+                <li>Хожу в зал</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="skills">Навыки</h2>
+            <p>Мои профессиональные навыки:</p>
+            <ul>
+                <li>Уверенное владение <strong>HTML, CSS</strong> и адаптивной версткой</li>
+                <li>Знание основ <strong>JavaScript</strong> и работа с DOM</li>
+                <li>Опыт создания интерфейсов с использованием <strong>React</strong></li>
+                <li>Использование <strong>Git и GitHub</strong> для контроля версий и командной работы</li>
+                <li>Работа с препроцессором (Sass), <strong>Flexbox и Grid Layout</strong></li>
+            </ul>
+        </section>
+
+        <section id="achievements">
+            <h2>Мои достижения:</h2>
+            <div class="cardsList">
+                <div class="card">
+                    <h3>Сертификат</h3>
+                    <p>Описание достижения или сертификата</p>
+                    <p class="year">2024</p>
+                </div>
+                <div class="card">
+                    <h3>Сертификат</h3>
+                    <p>Описание достижения или сертификата</p>
+                    <p class="year">2024</p>
+                </div>
+                <div class="card last">
+                    <h3>Сертификат</h3>
+                    <p>Описание достижения или сертификата</p>
+                    <p class="year">2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Вы можете связаться со мной через:</p>
+            <ul>
+                <li>Telegram: <a class="messengerLink" href="https://t.me/julses33" target="_blank">@julses33</a> </li>
+                <li>VKontakte: <a class="messengerLink" href="https://m.vk.com/nedyshnitetyt" target="_blank">Юлия Волкова</a> </li>
+            </ul>
+        </section>
+
+        <section id="photo">
+            <h2>Мои фотографии:</h2>
+            <div class="photoSection">
+                <input type="radio" name="toggle" id="toggle1" checked>
+                <input type="radio" name="toggle" id="toggle2">
+                <input type="radio" name="toggle" id="toggle3">
+
+                <div class="imageCarousel">
+                    <div class="first-group">
+                        <img class="image" src="images/photo1.jpeg" alt="">
+                        <img class="image" src="images/photo2.jpeg" alt="">
+                    </div>
+                    <div class="second-group">
+                        <img class="image" src="images/photo3.jpeg" alt="">
+                        <img class="image" src="images/photo4.jpeg" alt="">
+                    </div>
+                    <div class="third-group">
+                        <img class="image" src="images/photo5.jpeg" alt="">
+                        <img class="image" src="images/photo6.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <label for="toggle1" class="toggle">1</label>
+                    <label for="toggle2" class="toggle">2</label>
+                    <label for="toggle3" class="toggle">3</label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="lastBox">
+        <img class="copyImg" src="images/Copyright%20Icons%2050.png" alt="Знак копирайта">
+        <h6 class="footerText">Юля, 2025</h6>
+    </footer>
+</body>
+</html>
