@@ -22,15 +22,14 @@ body {
     font-family: "Noodles", sans-serif;
 }
 
-.topBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+header {
+    text-align: center;
 }
 
 .myPhoto {
     width: 15%;
     border-radius: 10px;
+    margin: 0 auto; /*почему нужно задавать это правило, если и без него картинка центрируется? */
 }
 
 .navList {
@@ -42,15 +41,16 @@ body {
     columns: 6;
     background-color: var(--blue-bg-color);
     align-items: center;
+    padding-top: 5px; /*добавила это св-во, т.к. названия разделов прилипали к верхнему краю синей полосы */
 }
 
-a:hover {
-    cursor: pointer;
-}
-
-.listItem {
+.navList li a { /*я не смогла придумать ничего умнее, чем это :)) */
     text-decoration: none;
     color: hsl(176, 100%, 98%);
+}
+
+a:hover { /*просто поменяла местоположение */
+    cursor: pointer;
 }
 
 .mainBox {
@@ -79,7 +79,7 @@ a:hover {
     transition: all 0.5s ease 0s;
 }
 
-.last {
+.cardsList :last-child {
     grid-column: span 2;
 }
 
@@ -163,6 +163,7 @@ input#toggle3:checked ~ .controls label[for="toggle3"] {
 
 .lastBox {
     text-align: end;
+    margin: 40px 40px 0 0;
 }
 
 .copyImg {
@@ -175,18 +176,32 @@ input#toggle3:checked ~ .controls label[for="toggle3"] {
 }
 
 @media (max-width: 768px) {
+    header h1 {
+        margin-right: 10px;
+    }
+
     .myPhoto {
         width: 30%;
     }
 
     .navList {
         flex-direction: column;
+        gap: 15px;
     }
 
     .cardsList {
         grid-auto-columns: auto;
         grid-template-rows: auto auto auto;
         grid-auto-flow: column;
+    }
+
+    .card {
+        grid-column: span 2;
+    }
+
+    .imageCarousel {
+        display: grid;
+        justify-content: center;
     }
 
     .image {
