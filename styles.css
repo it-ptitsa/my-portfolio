@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 *{
   user-select: none;
 }
@@ -17,11 +18,13 @@ header {
   padding: 16px;
   text-align: center;
 }
+
 main {
   display: block;
   margin: 0 32px;
   padding: 32px;
 }
+
 .header-img {
   max-width: 400px;
   border-radius: 10%;
@@ -31,9 +34,11 @@ main {
   user-drag: none;
   -webkit-user-drag: none;
 }
+
 nav {
   background-color: hsl(0, 0%, 30%);
 }
+
 nav ul {
   list-style: none;
   padding: 10px;
@@ -43,33 +48,41 @@ nav ul {
   justify-content: center;
   gap: 32px;
 }
+
 nav li {
   transition: transform 0.3s ease;
 }
+
 nav li:hover {
   transform: scale(1.1);
 }
+
 nav a {
   text-decoration: none;
   color: #f1f1f1;
   padding: 16px;
   margin: 8px;
 }
+
 section {
   margin-bottom: 32px;
 }
+
 h2 {
   font-weight: bold;
 }
+
 h3 {
   font-weight: bold;
 }
+
 .achievements-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 32px;
 }
+
 .achievements-item {
   flex: 1 1 300px;
   background-color: #ffffff;
@@ -78,48 +91,60 @@ h3 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
+
 .achievements-item:hover {
   transform: scale(1.05);
   transition: transform 0.5s ease;
 } 
+
 .achievements-item-date {
   font-size: 14px;
   align-self: flex-end;
 }
+
 .contact-marker-telegram::marker {
   content: "📞";
 }
+
 .contact-marker-email::marker {
   content: "📧";
 } 
+
 input[type="radio"] {
   display: none;
 }
+
 .photo-navigation {
   margin-top: 32px;
 }
+
 .photo-item-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   gap: 5px;
 }
+
 .photo-item {
   width: 80%;
+  max-width: 300px;
   height: 80%;
   border-radius: 8%;
   object-fit: cover;
   filter: saturate(0);
 }
+
 .photo-navigation-list {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 32px;
 }
+
 .page {
   display: inline-block;
   width: 40px;
@@ -130,14 +155,72 @@ input[type="radio"] {
   text-align: center;
   line-height: 40px;
 }
-.page:checked {
+
+.page {
   background-color: #000000;
   color: #ffffff;
 }
+
 .page:hover {
   background-color: #000000;
   color: #ffffff;
 }
+
 footer {
+  padding: 16px;
   margin-left: 32px;
+}
+
+@media (max-width: 768px) {
+
+header { 
+  padding: 12px;
+}
+
+.header-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; 
+}
+
+ body {
+  padding: 16px;
+}
+
+main {
+  margin: 0;
+  padding: 16px;
+}
+
+header h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.photo-item-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 8px;
+}
+.photo-item {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.achievements-content {
+  flex-direction: column; 
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+}
 }
