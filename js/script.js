@@ -7,6 +7,12 @@ const photos = [
   "../images/photo5.png",
   "../images/photo6.png",
 ];
+
+// 2. Предзагружаю фотографии для появления без мерцания
+photos.forEach((src) => {
+  const img = new Image();
+  img.src = src;
+});
 const photosPerPage = 2;
 let currentPage = 1;
 
@@ -47,5 +53,4 @@ function buildPagination() {
     pagination.appendChild(btn);
   }
 }
-
 showPage(1);
