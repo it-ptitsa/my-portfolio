@@ -10,9 +10,7 @@
 
 .hobbies {
   &__menu {
-    padding: 20px;
-    margin-left: 30px;
-    line-height: 150%;
+    @include content-spacing;
   }
   &__item {
     list-style: disc;
@@ -21,9 +19,7 @@
 
 .skills {
   &__menu {
-    padding: 20px;
-    margin-left: 30px;
-    line-height: 150%;
+    @include content-spacing;
   }
   &__item {
     list-style: disc;
@@ -71,9 +67,7 @@
 
 .contacts {
   &__menu {
-    padding: 20px;
-    margin-left: 30px;
-    line-height: 150%;
+    @include content-spacing;
   }
   &__item {
     list-style: disc;
