@@ -30,14 +30,14 @@
     &.active {
       font-weight: bold;
       color: #fff;
-      background-color: #da0808;
+      background-color: #ff8800;
       &:hover {
-        background-color: #da0808;
+        background-color: #ff8800;
         transition: 0.3s all;
       }
     }
     &:hover {
-      background-color: #ea6746;
+      background-color: #dcc83472;
       transition: 0.3s all;
     }
   }
