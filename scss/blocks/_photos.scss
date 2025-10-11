@@ -26,9 +26,19 @@
     color: #1ed9d07c;
     border-radius: 4px;
     background-color: #677b79;
+    transition: 0.3s all;
     &.active {
       font-weight: bold;
       color: #fff;
+      background-color: #ff8800;
+      &:hover {
+        background-color: #ff8800;
+        transition: 0.3s all;
+      }
+    }
+    &:hover {
+      background-color: #dcc83472;
+      transition: 0.3s all;
     }
   }
 }

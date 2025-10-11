@@ -16,7 +16,8 @@
     color: white;
     transition: 0.5s all;
     &:hover {
-      scale: 120%;
+      color: #ff8800;
+      transform: translateY(-15%);
       transition: 0.2s all;
     }
   }
