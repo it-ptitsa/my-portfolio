@@ -161,8 +161,18 @@ h5 {
   color: rgba(30, 217, 208, 0.4862745098);
   border-radius: 4px;
   background-color: #677b79;
+  transition: 0.3s all;
 }
 .photos__btn.active {
   font-weight: bold;
   color: #fff;
+  background-color: #da0808;
+}
+.photos__btn.active:hover {
+  background-color: #da0808;
+  transition: 0.3s all;
+}
+.photos__btn:hover {
+  background-color: #ea6746;
+  transition: 0.3s all;
 }
