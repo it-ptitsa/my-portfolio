@@ -1,0 +1,14 @@
+.header {
+  padding: 10px;
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__img {
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5%;
+  }
+}

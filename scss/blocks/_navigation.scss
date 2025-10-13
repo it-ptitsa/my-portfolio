@@ -1,0 +1,24 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  &__menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #342828;
+  }
+  &__item {
+    padding: 20px;
+  }
+  &__link {
+    display: block;
+    color: white;
+    transition: 0.5s all;
+    &:hover {
+      color: #ff8800;
+      transform: translateY(-15%);
+      transition: 0.2s all;
+    }
+  }
+}
