@@ -1,0 +1,38 @@
+.header {
+    position: sticky;
+    top: 5px;
+    max-width: 1220px;
+    margin: 24px auto;
+    padding: 0 24px;
+    z-index: 1;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 24px 0;
+    border-radius: var(--border-32);
+    background-color: var(--color-bg-light);
+}
+
+.menu__item {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text);
+    transition: color 0.3s ease;
+}
+
+.menu__item a:hover {
+    color: var(--color-stroke);
+}
+
+@media (max-width: 960px) {
+    .menu {
+        justify-content: center;
+        gap: 15px;
+    }
+}
